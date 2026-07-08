@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Moon Canoe and the Fairy Tree</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="book-app">
+      <section class="world" aria-label="Virtual 3D magical canoe tour">
+        <canvas id="worldCanvas"></canvas>
+        <div class="world-top">
+          <div>
+            <span>Interactive Reading Book</span>
+            <h1>The Moon Canoe and the Fairy Tree</h1>
+          </div>
+          <button id="soundButton" class="icon-button" type="button" title="Toggle magical music">♪</button>
+        </div>
+        <div class="progress-strip" aria-label="Story progress">
+          <span id="progressFill"></span>
+        </div>
+      </section>
+
+      <aside class="reader" aria-label="Story reader">
+        <div class="scene-card">
+          <img id="sceneImage" src="./assets/moon-canoe-tree.jpg" alt="" />
+          <div>
+            <span id="sceneKicker">Scene 1</span>
+            <h2 id="sceneTitle">Moonlit Departure</h2>
+          </div>
+        </div>
+
+        <article class="story-page">
+          <p id="sceneText"></p>
+          <div id="choicePanel" class="choice-panel"></div>
+        </article>
+
+        <div class="controls">
+          <button id="prevButton" type="button">Back</button>
+          <button id="interactButton" type="button">Paddle</button>
+          <button id="nextButton" type="button">Next</button>
+        </div>
+
+        <div class="sources-note">
+          <strong>Photo note</strong>
+          <span>Built from the supplied images. Additional royalty-free imagery was considered for inspiration only; no outside image assets were embedded.</span>
+        </div>
+      </aside>
+    </main>
+
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
